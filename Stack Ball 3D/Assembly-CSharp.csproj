@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{58543E5E-B7D7-068E-4D9D-2147A250BFBB}</ProjectGuid>
+    <ProjectGuid>{9966B747-D2ED-F8D1-18FD-243C81E16CC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,8 +64,8 @@
     <Compile Include="Assets\Scripts\GameUI Scripts\GameUI.cs" />
     <Compile Include="Assets\Scripts\Level Scripts\LevelSpawner.cs" />
     <Compile Include="Assets\Scripts\Player Scripst\Player.cs" />
-    <Compile Include="Assets\Scripts\Stack Scripts\StackPartController.cs" />
     <Compile Include="Assets\Scripts\GameUI Scripts\Ignore.cs" />
+    <Compile Include="Assets\Scripts\Stack Scripts\StackPartController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

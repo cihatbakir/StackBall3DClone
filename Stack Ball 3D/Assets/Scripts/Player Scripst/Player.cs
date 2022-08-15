@@ -195,7 +195,7 @@ public class Player : MonoBehaviour
                     playerState = PlayerState.Died;  // Died = baþlýk
 
                     // print("Game Over");
-                    ScoreManager.instance.ResetScore(); // skorun yenilenmesi.
+                   // ScoreManager.instance.ResetScore(); // skorun yenilenmesi.
                     SoundManager.instance.PlaySoundFX(deadClip, 1);  // ölüm müziði
                 }
             }
