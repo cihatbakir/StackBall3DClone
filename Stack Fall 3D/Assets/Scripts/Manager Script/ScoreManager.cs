@@ -1,21 +1,35 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour  // Score Yöneticisi
 {
     public static ScoreManager instance; // instance = misal
+
+    private Text scoreText;
+
     public int score = 10;  // skorumuzun 10 ile baþlamasý
     void Awake()
     {
+        scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
         MakeSingleton(); // MakeSingleton = yapým 
     }
     void Start()
     {
+       // scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
         AddScore(0);
     }
 
+    private void Update()
+    {
+        if (scoreText == null)
+        {
+            scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
+            scoreText.text = score.ToString();
+
+        }
+    }
     void MakeSingleton()
     {
         if (instance != null)
@@ -40,6 +54,7 @@ public class ScoreManager : MonoBehaviour  // Score Yöneticisi
             PlayerPrefs.SetInt("HighScore", score);
         print(score);
         // LoadTheText  = metin yükle
+        scoreText.text = score.ToString();
     }
     public void ResetScore()
     {

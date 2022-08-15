@@ -23,6 +23,11 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void SoundOnOff()
+    {
+        sound = !sound;
+    }
+
     public void  PlaySoundFX(AudioClip clip, float voulme)
     {
       /*float pitch = 1;  // pitch = saha    // sesi ayarlamamýz gerekiyordu kaldýrdýk 

@@ -8,11 +8,16 @@ public class StackController : MonoBehaviour  // Zeminleri parçalarken  oluþacak
     [SerializeField]
     private StackPartController[] stackPartControlls = null;
 
+    public int Lenght { get; internal set; }
+
     /*
     [HideInInspector]   // müfettiþi gizlemeyi ekledik.
     public bool test;      */
 
-
+   /* private void OnCollisionEnter(Collision collision)
+    {
+         if(OnCollision)  //**\\ detaylý araþtýr, sonra
+    }*/
     public void ShatterAllParts()  // ShatterAllParts = Tüm parçalarý parçala
     {
         if (transform.parent != null)
@@ -25,20 +30,20 @@ public class StackController : MonoBehaviour  // Zeminleri parçalarken  oluþacak
         {
             o.Shatter();  // Zemin parçalandý.
         }
-    //  StartCoroutine(RemoveParts());
+        StartCoroutine(RemoveParts());
     }
 
     IEnumerator RemoveParts()
     {
         yield return new WaitForSeconds(1);  // zeminin teknoloji parçalandýktan 1 saniye sonra ileri doðru uzaklaþmasý
 
-        foreach (StackPartController o in stackPartControlls) // parça kontrolleri
+       /* foreach (StackPartController o in stackPartControlls) // parça kontrolleri
         {
             o.RemoveAllChilds();  // parçalanmayacak tamamen yok olacak.
-        }
+        } */
         Destroy(gameObject);
+
+
     }
-
-
 
 }

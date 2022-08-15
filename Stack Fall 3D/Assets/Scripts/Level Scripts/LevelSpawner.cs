@@ -15,11 +15,19 @@ public class LevelSpawner : MonoBehaviour
     private GameObject temp1, temp2; // geçici 2 özelliðe sahip olacaðýz sonra döngü haline dönüþecek
 
 
-    private int level =1,addOn = 7;  // halka sayýsý için
+    public int level = 1, addOn = 7;  // halka sayýsý için
     float i = 0;
 
-    void Start()
+    public Material plateMat, baseMat;
+    public MeshRenderer playerMesh;
+
+
+    void Awake() // Start'tý deðiþtirip Awake //** seviye artýþý içinýn gösterisi için,uý 
     {
+        plateMat.color = Random.ColorHSV(0, 1, 0.5f, 1, 1, 1);
+        baseMat.color = plateMat.color + Color.gray;
+        playerMesh.material.color = plateMat.color;
+
 
         level = PlayerPrefs.GetInt("Level", 1);  // seviye atlama
 
@@ -63,7 +71,15 @@ public class LevelSpawner : MonoBehaviour
         temp2.transform.position = new Vector3(0, i - 0.01f, 0);
     }
 
-
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            plateMat.color = Random.ColorHSV(0, 1, 0.5f, 1, 1, 1);
+            baseMat.color = plateMat.color + Color.gray;
+            playerMesh.material.color = plateMat.color;
+        }
+    }
 
     void ModelSelection()  // renkleri ve þekilleri random sekilde atamasýný saðlayan komut.
     {

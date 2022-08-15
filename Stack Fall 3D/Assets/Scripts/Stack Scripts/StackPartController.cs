@@ -7,19 +7,19 @@ public class StackPartController : MonoBehaviour // yýðýn parçasý denetleyici
     private Rigidbody rigidBody;
     private MeshRenderer meshRenderer;
     private StackController stackController;
-    private Collider collider;
+    private MeshCollider collider_m;
 
     void Awake()
     {
         rigidBody = GetComponent<Rigidbody>();  // GetComponent = bileþen al
         meshRenderer = GetComponent<MeshRenderer>();
         stackController = transform.parent.GetComponent<StackController>();
-        collider = GetComponent<Collider>();
+        collider_m = GetComponent<MeshCollider>();
     }
     public void Shatter() // Shatter = kýrmak
     {
         rigidBody.isKinematic = false;    // ölmeden önce yer çekimi etkinleþecek
-        collider.enabled = false;  // enabled = etkinleþtirilmiþ
+        collider_m.enabled = false;  // enabled = etkinleþtirilmiþ
 
         Vector3 forcePoint = transform.parent.position;  // forcePoint = kuvvet noktasý
         float paretXpos = transform.parent.position.x;  // ana pozisyonunu = paret 
