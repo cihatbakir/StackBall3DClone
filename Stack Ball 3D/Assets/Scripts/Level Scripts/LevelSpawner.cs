@@ -67,8 +67,8 @@ public class LevelSpawner : MonoBehaviour
             temp1.transform.parent = FindObjectOfType<Rotator>().transform;// burada zeminin dönmesinde kullandýðýmýz objenin tanýmlanmasý.
         }
 
-        temp2 = Instantiate(winPrefab); // win en alt tabakaya inmesi demek.
-        temp2.transform.position = new Vector3(0, i - 0.01f, 0);
+        temp2 = Instantiate(winPrefab, new Vector3(0, i - 0.01f, 0), Quaternion.identity); // win en alt tabakaya inmesi demek.
+        // temp2.transform.position = new Vector3(0, i - 0.01f, 0);
     }
 
     private void Update()
