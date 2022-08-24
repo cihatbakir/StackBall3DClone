@@ -23,7 +23,6 @@ public class CameraFollow : MonoBehaviour
 
             camFollow = new Vector3(transform.position.x, player.position.y, transform.position.z);   // vector3 ile oyuncu y konumunda transform ise x ve z ekseninde durmasýný saðlýyor
 
-        transform.position = new Vector3(transform.position.x, camFollow.y, -5);  // burada ise camera yý -5 y eksninde aþaðý inmesini saðlýyor.
+        transform.position = new Vector3(transform.position.x, camFollow.y, -5);  // burada ise camera yý -5 y eksninde aþaðý inmesini saðlýyor. 
     }
 }
-

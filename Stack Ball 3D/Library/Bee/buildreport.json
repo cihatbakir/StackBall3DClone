@@ -5,15 +5,15 @@
 { "pid": "Unity", "ph":"M", "name": "process_name", "args": {"name": "Unity"} },
 { "pid": "Unity", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -100} },
 { "pid": "Unity", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": ""} },
-{ "pid": "Unity", "tid": 1,"ts": 8135898530.7,"dur": 12867777.9, "ph":"X", "name": "Build player"},
-{ "pid": "Unity", "tid": 1,"ts": 8135899194.8,"dur": 137507.5, "ph":"X", "name": "Preprocess Player"},
-{ "pid": "Unity", "tid": 1,"ts": 8136071480.2,"dur": 12656537.2, "ph":"X", "name": "Prepare For Build"},
+{ "pid": "Unity", "tid": 1,"ts": 6264709603.9,"dur": 28148385, "ph":"X", "name": "Build player"},
+{ "pid": "Unity", "tid": 1,"ts": 6264710369.9,"dur": 111457.7, "ph":"X", "name": "Preprocess Player"},
+{ "pid": "Unity", "tid": 1,"ts": 6264827192.2,"dur": 27978048.3, "ph":"X", "name": "Prepare For Build"},
 {}
 
 ],
-"meta_datetime": "08/16/2022 14:23:18",
-"meta_command_line": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.1.9f1\\Editor\\Unity.exe\" -projectpath \"C:\\Users\\monster\\Documents\\GitHub\\StackBall3DClone\\Stack Ball 3D\" -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-monster -hubSessionId b19faf00-1d43-11ed-8b0c-9b352655ae5b -accessToken nCdxDt9HM5InWIFErW_tUyQSdoM54Hh5dWyvo2VpW7w011f",
-"meta_command_line_args": "C:\\Program Files\\Unity\\Hub\\Editor\\2022.1.9f1\\Editor\\Unity.exe -projectpath C:\\Users\\monster\\Documents\\GitHub\\StackBall3DClone\\Stack Ball 3D -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-monster -hubSessionId b19faf00-1d43-11ed-8b0c-9b352655ae5b -accessToken nCdxDt9HM5InWIFErW_tUyQSdoM54Hh5dWyvo2VpW7w011f",
+"meta_datetime": "08/24/2022 13:35:30",
+"meta_command_line": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.1.9f1\\Editor\\Unity.exe\" -projectpath \"C:\\Users\\monster\\Documents\\GitHub\\StackBall3DClone\\Stack Ball 3D\" -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-monster -hubSessionId 2a39bf40-238a-11ed-860f-b308b17dfd17 -accessToken FW_jplfLZYweazsGZdT7Kg4e5QD1SIKw77jypndksfU011f",
+"meta_command_line_args": "C:\\Program Files\\Unity\\Hub\\Editor\\2022.1.9f1\\Editor\\Unity.exe -projectpath C:\\Users\\monster\\Documents\\GitHub\\StackBall3DClone\\Stack Ball 3D -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-monster -hubSessionId 2a39bf40-238a-11ed-860f-b308b17dfd17 -accessToken FW_jplfLZYweazsGZdT7Kg4e5QD1SIKw77jypndksfU011f",
 "meta_user_name": "monster",
 "meta_os_version": "Microsoft Windows NT 10.0.19044.0",
 "meta_cpu_count": "16"
