@@ -38,16 +38,28 @@ public class LevelSpawner : MonoBehaviour
         float random = Random.value;
         for (i = 0; i > -level - addOn; i -= 0.5f) // senaryo sürecince tekrar edecek.
         {
-
             if (level <= 20)
                 temp1 = Instantiate(modelPrefab[Random.Range(0, 2)]);
             if (level > 20 && level <= 50)
                 temp1 = Instantiate(modelPrefab[Random.Range(1, 3)]);
             if (level > 50 && level <= 100)
                 temp1 = Instantiate(modelPrefab[Random.Range(2, 4)]);
-            if (level > 100)
+            if (level > 100 && level <= 300)      // normalde 100 den sonra kalýyordu burada ama ben 500 ile sýnýrladým
                 temp1 = Instantiate(modelPrefab[Random.Range(3, 4)]);
-
+            if (level > 300 && level <= 500)
+                temp1 = Instantiate(modelPrefab[Random.Range(1, 3)]);
+            if (level > 500)
+                temp1 = Instantiate(modelPrefab[Random.Range(3, 4)]);
+            /*  // levellerin eski hali 
+                        if (level <= 20)
+                            temp1 = Instantiate(modelPrefab[Random.Range(0, 2)]);
+                        if (level > 20 && level <= 50)
+                            temp1 = Instantiate(modelPrefab[Random.Range(1, 3)]);
+                        if (level > 50 && level <= 100)
+                            temp1 = Instantiate(modelPrefab[Random.Range(2, 4)]);
+                        if (level > 100)
+                            temp1 = Instantiate(modelPrefab[Random.Range(3, 4)]);
+            */
             temp1.transform.position = new Vector3(0, i - 0.01f, 0);
             temp1.transform.eulerAngles = new Vector3(0, i * 8, 0); // döngü
 

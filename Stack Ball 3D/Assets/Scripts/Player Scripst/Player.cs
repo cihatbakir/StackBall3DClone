@@ -43,6 +43,240 @@ public class Player : MonoBehaviour
      //    print(totalStack);
     }
 
+    void NewFireEffect() // new fireEfect ekledim..    // new FireEffect düzenlenecek
+    {
+        if (PlayerPrefs.GetInt("Level") < 10)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * 10f;
+                else
+                    currentTime -= Time.deltaTime * 10f;
+            }
+
+        else if (PlayerPrefs.GetInt("Level") >= 10 && PlayerPrefs.GetInt("Level") < 40)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * 10f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * .002f;
+                else
+                    currentTime -= Time.deltaTime * .8f;
+            }
+
+        else if (PlayerPrefs.GetInt("Level") >= 40 && PlayerPrefs.GetInt("Level") < 80)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * 0.31f;
+                else
+                    currentTime -= Time.deltaTime * .8f;
+            }
+
+        else if (PlayerPrefs.GetInt("Level") >= 80 && PlayerPrefs.GetInt("Level") < 100)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * 0.31f;
+                else
+                    currentTime -= Time.deltaTime * .8f;
+            }
+
+        else if (PlayerPrefs.GetInt("Level") >= 100 && PlayerPrefs.GetInt("Level") < 150)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * 0.31f;
+                else
+                    currentTime -= Time.deltaTime * .8f;
+            }
+
+        else if (PlayerPrefs.GetInt("Level") >= 150 && PlayerPrefs.GetInt("Level") < 200)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * 0.31f;
+                else
+                    currentTime -= Time.deltaTime * .8f;
+            }
+
+        else if (PlayerPrefs.GetInt("Level") >= 200 && PlayerPrefs.GetInt("Level") < 250)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * 0.31f;
+                else
+                    currentTime -= Time.deltaTime * .8f;
+            }
+
+        else if (PlayerPrefs.GetInt("Level") >= 250 && PlayerPrefs.GetInt("Level") < 350)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * 0.31f;
+                else
+                    currentTime -= Time.deltaTime * .8f;
+            }
+
+        else if (PlayerPrefs.GetInt("Level") >= 350 && PlayerPrefs.GetInt("Level") < 450)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * 0.31f;
+                else
+                    currentTime -= Time.deltaTime * .8f;
+            }
+
+        else if (PlayerPrefs.GetInt("Level") >= 450 && PlayerPrefs.GetInt("Level") < 550)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * 0.31f;
+                else
+                    currentTime -= Time.deltaTime * .8f;
+            }
+
+        else if (PlayerPrefs.GetInt("Level") >= 550)
+            if (invincible)
+            {
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+
+                if (!fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(true); // efekti etkinleþmesi.
+
+            }
+            else
+            {  // yenilmez olmadýðýmýz zaman 
+
+                if (fireEffect.activeInHierarchy)
+                    fireEffect.SetActive(false); // efektin kapanmasý
+
+                if (smash)
+                    currentTime += Time.deltaTime * 0.31f;
+                else
+                    currentTime -= Time.deltaTime * .8f;
+            }
+    }
+
    
 
     void Update()  // tek tek çalýþtýracak
@@ -51,7 +285,7 @@ public class Player : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))   // {} süslü parantez kullanabiliriz ama smash varken kullanmasakta olur 
                 smash = true;
-
+                
             if (Input.GetMouseButtonUp(0))
                 smash = false;
 
@@ -114,7 +348,7 @@ public class Player : MonoBehaviour
                 //  playerState = PlayerState.Playing;
                 FindObjectOfType<LevelSpawner>().NextLevel();
         }
-
+        NewFireEffect(); // yeni oluþturduðumuz efekti burada çaðýrdýk
     }
 
     void FixedUpdate()  //sanide update göre fark atar
