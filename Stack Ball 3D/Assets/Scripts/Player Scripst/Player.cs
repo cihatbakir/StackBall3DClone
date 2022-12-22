@@ -61,15 +61,15 @@ public class Player : MonoBehaviour
                     fireEffect.SetActive(false); // efektin kapanmasý
 
                 if (smash)
-                    currentTime += Time.deltaTime * 10f;
+                    currentTime += Time.deltaTime * 0.31f;
                 else
-                    currentTime -= Time.deltaTime * 10f;
+                    currentTime -= Time.deltaTime * 0.3f;
             }
 
         else if (PlayerPrefs.GetInt("Level") >= 10 && PlayerPrefs.GetInt("Level") < 40)
             if (invincible)
             {
-                currentTime -= Time.deltaTime * 10f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
 
                 if (!fireEffect.activeInHierarchy)
                     fireEffect.SetActive(true); // efekti etkinleþmesi.
@@ -82,15 +82,15 @@ public class Player : MonoBehaviour
                     fireEffect.SetActive(false); // efektin kapanmasý
 
                 if (smash)
-                    currentTime += Time.deltaTime * .002f;
+                    currentTime += Time.deltaTime * 0.31f;
                 else
-                    currentTime -= Time.deltaTime * .8f;
+                    currentTime -= Time.deltaTime * .3f;
             }
 
         else if (PlayerPrefs.GetInt("Level") >= 40 && PlayerPrefs.GetInt("Level") < 80)
             if (invincible)
             {
-                currentTime -= Time.deltaTime * .2f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
+                currentTime -= Time.deltaTime * .8f;  // yenilmez isek  faha hýzlý zeminleri paçalayacak ve hýzlý aþaðý inecek
 
                 if (!fireEffect.activeInHierarchy)
                     fireEffect.SetActive(true); // efekti etkinleþmesi.
